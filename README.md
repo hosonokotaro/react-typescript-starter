@@ -12,7 +12,7 @@ React プロジェクトのスターターです。create-react-app を使わず
 // install
 npm i
 
-// Local server (localhost:3000) が立ち上がります
+// Local server (localhost:3000) が立ち上がります。localhost:3000をブラウザで開いてください。
 npm start
 ```
 
