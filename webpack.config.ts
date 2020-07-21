@@ -1,7 +1,12 @@
 import path from 'path';
-import webpack from 'webpack';
+import webpack, { Configuration as WebpackConfiguration } from 'webpack';
+import { Configuration as WebpackDevServerConfiguration } from 'webpack-dev-server';
 
-const config: webpack.Configuration = {
+interface Configuration extends WebpackConfiguration {
+  devServer?: WebpackDevServerConfiguration;
+}
+
+const config: Configuration = {
   mode: 'development',
   entry: './src/index.tsx',
   output: {
