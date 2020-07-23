@@ -48,7 +48,7 @@ const config: Configuration = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new HTMLWebpackPlugin({ template: './public/index.html' }),
+    new HTMLWebpackPlugin({ template: './src/index.html' }),
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
       patterns: [
