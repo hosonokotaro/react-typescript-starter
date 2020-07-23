@@ -3,6 +3,7 @@ import webpack, { Configuration as WebpackConfiguration } from 'webpack';
 import { Configuration as WebpackDevServerConfiguration } from 'webpack-dev-server';
 import HTMLWebpackPlugin from 'html-webpack-plugin';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 interface Configuration extends WebpackConfiguration {
   devServer?: WebpackDevServerConfiguration;
@@ -49,6 +50,14 @@ const config: Configuration = {
     new webpack.HotModuleReplacementPlugin(),
     new HTMLWebpackPlugin({ template: './public/index.html' }),
     new CleanWebpackPlugin(),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: '**/*',
+          context: 'public/',
+        }
+      ]
+    }),
   ],
 };
 
