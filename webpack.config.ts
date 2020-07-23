@@ -55,6 +55,7 @@ const config: Configuration = {
         {
           from: '**/*',
           context: 'public/',
+          noErrorOnMissing: true,
         }
       ]
     }),
