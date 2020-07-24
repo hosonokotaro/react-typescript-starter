@@ -45,6 +45,7 @@ const config: Configuration = {
     contentBase: path.join(__dirname, 'public/'),
     port: 3000,
     hotOnly: true,
+    historyApiFallback: true,
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
