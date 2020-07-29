@@ -47,6 +47,7 @@ const config: Configuration = {
     hotOnly: true,
     historyApiFallback: true,
   },
+  devtool: 'source-map',
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HTMLWebpackPlugin({ template: './src/index.html' }),
