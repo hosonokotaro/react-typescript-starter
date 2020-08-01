@@ -1,5 +1,5 @@
 import React from 'react';
-import { hot } from 'react-hot-loader';
+import { hot } from 'react-hot-loader/root';
 import './App.css';
 
 import Message from './components/Message';
@@ -14,4 +14,4 @@ const App: React.FC = () => {
   );
 };
 
-export default hot(module)(App);
+export default hot(App);
