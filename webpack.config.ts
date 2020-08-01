@@ -40,6 +40,9 @@ const config: Configuration = {
   },
   resolve: {
     extensions: ['*', '.js', '.ts', '.tsx'],
+    alias: {
+      'react-dom': '@hot-loader/react-dom',
+    },
   },
   devServer: {
     contentBase: path.join(__dirname, 'public/'),
