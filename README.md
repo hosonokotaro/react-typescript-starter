@@ -51,6 +51,6 @@ npm run prettier-format
 
 ## GitHub Actions について
 
-`npm run build`コマンドが通るかを確認しています。（例えば当リポジトリでは、buildが通ったらmasterブランチにマージできるように設定されています）
+masterにpull requestを送ると、`npm run build`コマンドが通るかを確認します。（例えば当リポジトリでは、buildが通ったらmasterブランチにマージできるようにマージルールを設定されています）
 
 `.github/workflows/install-build.yml` を必要に応じて適宜変更してください。
