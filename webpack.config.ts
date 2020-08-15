@@ -50,6 +50,10 @@ const config: Configuration = {
     port: 3000,
     hotOnly: true,
     historyApiFallback: true,
+    watchOptions: {
+      poll: 1000,
+      ignored: ['node_modules'],
+    },
   },
   devtool: 'source-map',
   plugins: [
