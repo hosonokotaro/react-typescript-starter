@@ -7,8 +7,8 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack --mode=production",
-    "lint": "eslint '{src,types}/**/*.{ts,tsx}'",
-    "prettier-format": "prettier --config .prettierrc '{src,types}/**/*.{ts,tsx}' --write"
+    "lint": "eslint './**/*.{ts,tsx}'",
+    "prettier-format": "prettier --config .prettierrc './**/*.{ts,tsx}' --write"
   },
   "author": "",
   "license": "MIT",
