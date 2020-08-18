@@ -4,6 +4,7 @@ import { Configuration as WebpackDevServerConfiguration } from 'webpack-dev-serv
 import HTMLWebpackPlugin from 'html-webpack-plugin';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
+import ForkTsCheckerPlugin from 'fork-ts-checker-webpack-plugin';
 
 interface Configuration extends WebpackConfiguration {
   devServer?: WebpackDevServerConfiguration;
@@ -66,8 +67,16 @@ const config: Configuration = {
           from: '**/*',
           context: 'public/',
           noErrorOnMissing: true,
-        }
-      ]
+        },
+      ],
+    }),
+    new ForkTsCheckerPlugin({
+      typescript: {
+        diagnosticOptions: {
+          semantic: true,
+          syntactic: true,
+        },
+      },
     }),
   ],
 };
