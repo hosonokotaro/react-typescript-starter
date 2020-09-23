@@ -11,12 +11,6 @@
     "prettier-format": "prettier --config .prettierrc './**/*.{ts,tsx}' --write",
     "test": "jest"
   },
-  "jest": {
-    "preset": "ts-jest",
-    "moduleNameMapper": {
-      "^@App/(.*)$": "<rootDir>/src/$1"
-    }
-  },
   "author": "",
   "license": "MIT",
   "devDependencies": {

@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "jsx": "react",
-    "target": "esnext",
+    "target": "ES2019",
     "moduleResolution": "node",
     "allowJs": true,
     "noEmit": true,
@@ -13,8 +13,5 @@
       "@App/*": ["src/*"]
     }
   },
-  "include": [
-    "./src",
-    "./types/**/*.d.ts"
-  ]
+  "include": ["./src", "./types/**/*.d.ts"]
 }
