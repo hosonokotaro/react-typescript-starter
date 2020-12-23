@@ -12,7 +12,7 @@ interface Configuration extends WebpackConfiguration {
 
 const config: Configuration = {
   mode: 'development',
-  entry: './src/index.tsx',
+  entry: ['@babel/polyfill', './src/index.tsx'],
   output: {
     path: path.resolve(__dirname, 'dist/'),
     filename: 'bundle.js',
