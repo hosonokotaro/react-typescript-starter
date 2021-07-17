@@ -20,7 +20,6 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
-    "plugin:testing-library/recommended",
     "plugin:testing-library/react",
     "prettier"
   ],
