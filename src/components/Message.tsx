@@ -1,10 +1,17 @@
 import React from 'react';
 
-const Message: React.FC<{ text: string }> = (props) => {
+interface Props {
+  text: string;
+  no: number;
+}
+
+const Message: React.FC<Props> = ({ text, no }) => {
   return (
-    <>
-      <p>{props.text}</p>
-    </>
+    <div>
+      <p>
+        {text} {no}
+      </p>
+    </div>
   );
 };
 
