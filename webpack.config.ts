@@ -12,7 +12,7 @@ interface Configuration extends WebpackConfiguration {
 
 const config: Configuration = {
   mode: 'development',
-  entry: ['@babel/polyfill', './src/index.tsx'],
+  entry: ['./src/index.tsx'],
   output: {
     path: path.resolve(__dirname, 'dist/'),
     filename: 'bundle.js',
@@ -33,10 +33,6 @@ const config: Configuration = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.(png|jpe?g|gif)$/i,
-        use: ['file-loader'],
       },
     ],
   },
