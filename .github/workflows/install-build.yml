@@ -33,5 +33,4 @@ jobs:
             ${{ runner.os }}-
 
       - run: npm ci
-      - run: npm run test
       - run: npm run build
